@@ -487,6 +487,8 @@
 		29C705011F147E0E009CF162 /* TUSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704FF1F147E0E009CF162 /* TUSafariActivity.m */; };
 		29C705031F147FC8009CF162 /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C705021F147FC8009CF162 /* Apollo.framework */; };
 		29C705041F147FC8009CF162 /* Apollo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C705021F147FC8009CF162 /* Apollo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C705081F14818D009CF162 /* NYTPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C705071F14818D009CF162 /* NYTPhotoViewer.framework */; };
+		29C705091F14818D009CF162 /* NYTPhotoViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C705071F14818D009CF162 /* NYTPhotoViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29C9FDCE1EC65FEE00EE3A52 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */; };
 		29C9FDCF1EC65FEE00EE3A52 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */; };
 		29C9FDD01EC65FEE00EE3A52 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */; };
@@ -527,6 +529,7 @@
 				29C704F11F1479C5009CF162 /* SDWebImage.framework in Embed Frameworks */,
 				29C704F91F147CF3009CF162 /* Alamofire.framework in Embed Frameworks */,
 				29C704E01F147422009CF162 /* IGListKit.framework in Embed Frameworks */,
+				29C705091F14818D009CF162 /* NYTPhotoViewer.framework in Embed Frameworks */,
 				29C705041F147FC8009CF162 /* Apollo.framework in Embed Frameworks */,
 				292484B91F01CB5C0054FE20 /* SwipeCellKit.framework in Embed Frameworks */,
 				295F52DB1EF1C0C7000B53CF /* MMMarkdown.framework in Embed Frameworks */,
@@ -741,6 +744,7 @@
 		29C704FE1F147E0E009CF162 /* TUSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUSafariActivity.h; sourceTree = "<group>"; };
 		29C704FF1F147E0E009CF162 /* TUSafariActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUSafariActivity.m; sourceTree = "<group>"; };
 		29C705021F147FC8009CF162 /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C705071F14818D009CF162 /* NYTPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NYTPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
@@ -771,6 +775,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C705081F14818D009CF162 /* NYTPhotoViewer.framework in Frameworks */,
 				29C704F31F147A68009CF162 /* SnapKit.framework in Frameworks */,
 				29C704F81F147CF3009CF162 /* Alamofire.framework in Frameworks */,
 				29C704F01F1479C5009CF162 /* SDWebImage.framework in Frameworks */,
@@ -1396,6 +1401,7 @@
 		CF4CC0BFE456879DD6DBC714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C705071F14818D009CF162 /* NYTPhotoViewer.framework */,
 				29C705021F147FC8009CF162 /* Apollo.framework */,
 				29C704F71F147CF3009CF162 /* Alamofire.framework */,
 				29C704F41F147A6D009CF162 /* SnapKit.framework */,
