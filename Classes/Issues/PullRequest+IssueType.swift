@@ -11,10 +11,6 @@ import IGListKit
 
 extension IssueOrPullRequestQuery.Data.Repository.IssueOrPullRequest.AsPullRequest: IssueType {
 
-    var id: String {
-        return fragments.nodeFields.id
-    }
-
     var pullRequest: Bool {
         return true
     }
@@ -33,10 +29,6 @@ extension IssueOrPullRequestQuery.Data.Repository.IssueOrPullRequest.AsPullReque
 
     var closableFields: ClosableFields {
         return fragments.closableFields
-    }
-
-    var locked: Bool {
-        return fragments.lockableFields.locked
     }
 
     func timelineViewModels(width: CGFloat) -> [ListDiffable] {

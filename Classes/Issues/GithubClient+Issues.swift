@@ -28,7 +28,7 @@ extension GithubClient {
         completion: @escaping ([ListDiffable]) -> ()
         ) {
 
-        let query = IssueOrPullRequestQuery(owner: owner, repo: repo, number: number, pageSize: 100)
+        let query = IssueOrPullRequestQuery(owner: owner, repo: repo, number: number, page_size: 100)
         apollo.fetch(query: query, cachePolicy: .returnCacheDataElseFetch) { (result, error) in
             let issueOrPullRequest = result?.data?.repository?.issueOrPullRequest
             if let issueType: IssueType = issueOrPullRequest?.asIssue ?? issueOrPullRequest?.asPullRequest {
@@ -52,7 +52,7 @@ extension GithubClient {
         completion: @escaping (IssueCommentReactionViewModel?) -> ()
         ) {
         if isAdd {
-            apollo.perform(mutation: AddReactionMutation(subjectId: subjectID, content: content)) { (result, error) in
+            apollo.perform(mutation: AddReactionMutation(subject_id: subjectID, content: content)) { (result, error) in
                 if let reactionFields = result?.data?.addReaction?.subject.fragments.reactionFields {
                     completion(createIssueReactions(reactions: reactionFields))
                 } else {
@@ -61,7 +61,7 @@ extension GithubClient {
                 showErrors(graphQLErrors: result?.errors, networkError: error)
             }
         } else {
-            apollo.perform(mutation: RemoveReactionMutation(subjectId: subjectID, content: content)) { (result, error) in
+            apollo.perform(mutation: RemoveReactionMutation(subject_id: subjectID, content: content)) { (result, error) in
                 if let reactionFields = result?.data?.removeReaction?.subject.fragments.reactionFields {
                     completion(createIssueReactions(reactions: reactionFields))
                 } else {
