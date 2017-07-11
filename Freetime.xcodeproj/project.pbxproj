@@ -475,6 +475,9 @@
 		29C704DD1F14740E009CF162 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704DC1F14740E009CF162 /* IGListKit.framework */; };
 		29C704DF1F147422009CF162 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704DE1F147422009CF162 /* IGListKit.framework */; };
 		29C704E01F147422009CF162 /* IGListKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704DE1F147422009CF162 /* IGListKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C704EA1F14775C009CF162 /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704E51F14775C009CF162 /* JDStatusBarNotification.m */; };
+		29C704EB1F14775C009CF162 /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704E71F14775C009CF162 /* JDStatusBarStyle.m */; };
+		29C704EC1F14775C009CF162 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704E91F14775C009CF162 /* JDStatusBarView.m */; };
 		29C9FDCE1EC65FEE00EE3A52 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */; };
 		29C9FDCF1EC65FEE00EE3A52 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */; };
 		29C9FDD01EC65FEE00EE3A52 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */; };
@@ -713,6 +716,12 @@
 		29C53FC01F12EF4000A59ED5 /* IssueReferencedSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueReferencedSectionController.swift; sourceTree = "<group>"; };
 		29C704DC1F14740E009CF162 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = "Vendor/IGListKit/build/Debug-iphoneos/IGListKit.framework"; sourceTree = "<group>"; };
 		29C704DE1F147422009CF162 /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C704E41F14775C009CF162 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
+		29C704E51F14775C009CF162 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
+		29C704E61F14775C009CF162 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
+		29C704E71F14775C009CF162 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
+		29C704E81F14775C009CF162 /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
+		29C704E91F14775C009CF162 /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
 		29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
@@ -1041,6 +1050,7 @@
 		297AE82B1EC0D58A00B44A1F = {
 			isa = PBXGroup;
 			children = (
+				29C704E11F147744009CF162 /* Vendor */,
 				297AE8571EC0D5C100B44A1F /* Classes */,
 				CF4CC0BFE456879DD6DBC714 /* Frameworks */,
 				297AE84B1EC0D58A00B44A1F /* FreetimeTests */,
@@ -1257,6 +1267,36 @@
 				29A08FBC1F12EF7C00C5368E /* IssueReferencedCommitSectionController.swift */,
 			);
 			path = ReferencedCommit;
+			sourceTree = "<group>";
+		};
+		29C704E11F147744009CF162 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				29C704E21F14774B009CF162 /* JDStatusBarNotification */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		29C704E21F14774B009CF162 /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				29C704E31F14775C009CF162 /* JDStatusBarNotification */,
+			);
+			name = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		29C704E31F14775C009CF162 /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				29C704E41F14775C009CF162 /* JDStatusBarNotification.h */,
+				29C704E51F14775C009CF162 /* JDStatusBarNotification.m */,
+				29C704E61F14775C009CF162 /* JDStatusBarStyle.h */,
+				29C704E71F14775C009CF162 /* JDStatusBarStyle.m */,
+				29C704E81F14775C009CF162 /* JDStatusBarView.h */,
+				29C704E91F14775C009CF162 /* JDStatusBarView.m */,
+			);
+			name = JDStatusBarNotification;
+			path = Vendor/JDStatusBarNotification/JDStatusBarNotification;
 			sourceTree = "<group>";
 		};
 		29C9FDD91EC6613F00EE3A52 /* Notifications */ = {
@@ -1680,6 +1720,7 @@
 				292FCB1D1EDFCD3D0026635E /* ReactionViewModel.swift in Sources */,
 				294563E61EE4EE6F00DBCD35 /* IssueStatusModel.swift in Sources */,
 				29C9FDE11EC667AE00EE3A52 /* Styles.swift in Sources */,
+				29C704EB1F14775C009CF162 /* JDStatusBarStyle.m in Sources */,
 				292CD3CC1F0DB89600D3D57B /* IssueReviewSectionController.swift in Sources */,
 				292CD3D61F0DC4DA00D3D57B /* UIViewController+AttributedStringViewDelegate.swift in Sources */,
 				29C33FDF1F128D4400EC8D40 /* SelectableCell.swift in Sources */,
@@ -1729,6 +1770,7 @@
 				298BA08D1EC90A9000B01946 /* NSAttributedStringSizing.swift in Sources */,
 				2949674E1EF9719300B1CF1A /* IssueCommentHrCell.swift in Sources */,
 				2963A9321EE1EBE20066509C /* UIMenuController+Reactions.swift in Sources */,
+				29C704EA1F14775C009CF162 /* JDStatusBarNotification.m in Sources */,
 				29A1950C1EC7901400C3E289 /* NotificationType.swift in Sources */,
 				29A08FBE1F12EF7C00C5368E /* IssueReferencedCommitModel.swift in Sources */,
 				290D2A421F04D3470082E6CC /* IssueStatus.swift in Sources */,
@@ -1777,6 +1819,7 @@
 				29A08FBF1F12EF7C00C5368E /* IssueReferencedCommitSectionController.swift in Sources */,
 				294563EE1EE5012900DBCD35 /* PullRequest+IssueType.swift in Sources */,
 				295C31C91F09E72D00521CED /* NotificationNextPageSectionController.swift in Sources */,
+				29C704EC1F14775C009CF162 /* JDStatusBarView.m in Sources */,
 				292CD3C81F0DB32700D3D57B /* IssueReviewDetailsCell.swift in Sources */,
 				29FB942C1EE750DB0016E6D4 /* IssueLabeledModel.swift in Sources */,
 				29C295111EC7B83200D46CD2 /* ShowMoreDetailsLabel.swift in Sources */,
