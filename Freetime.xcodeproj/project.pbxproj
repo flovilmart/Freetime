@@ -484,6 +484,7 @@
 		29C704F61F147A6D009CF162 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F41F147A6D009CF162 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29C704F81F147CF3009CF162 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F71F147CF3009CF162 /* Alamofire.framework */; };
 		29C704F91F147CF3009CF162 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F71F147CF3009CF162 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C705011F147E0E009CF162 /* TUSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704FF1F147E0E009CF162 /* TUSafariActivity.m */; };
 		29C9FDCE1EC65FEE00EE3A52 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */; };
 		29C9FDCF1EC65FEE00EE3A52 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */; };
 		29C9FDD01EC65FEE00EE3A52 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */; };
@@ -734,6 +735,8 @@
 		29C704F21F147A68009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Vendor/SnapKit/build/Debug/SnapKit.framework; sourceTree = "<group>"; };
 		29C704F41F147A6D009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C704F71F147CF3009CF162 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C704FE1F147E0E009CF162 /* TUSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUSafariActivity.h; sourceTree = "<group>"; };
+		29C704FF1F147E0E009CF162 /* TUSafariActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUSafariActivity.m; sourceTree = "<group>"; };
 		29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
@@ -1287,6 +1290,7 @@
 		29C704E11F147744009CF162 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				29C704FA1F147DEB009CF162 /* TUSafariActivity */,
 				29C704E21F14774B009CF162 /* JDStatusBarNotification */,
 			);
 			name = Vendor;
@@ -1312,6 +1316,32 @@
 			);
 			name = JDStatusBarNotification;
 			path = Vendor/JDStatusBarNotification/JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		29C704FA1F147DEB009CF162 /* TUSafariActivity */ = {
+			isa = PBXGroup;
+			children = (
+				29C704FB1F147DFE009CF162 /* Pod */,
+			);
+			name = TUSafariActivity;
+			sourceTree = "<group>";
+		};
+		29C704FB1F147DFE009CF162 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				29C704FC1F147E0E009CF162 /* Classes */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		29C704FC1F147E0E009CF162 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				29C704FE1F147E0E009CF162 /* TUSafariActivity.h */,
+				29C704FF1F147E0E009CF162 /* TUSafariActivity.m */,
+			);
+			name = Classes;
+			path = Vendor/TUSafariActivity/Pod/Classes;
 			sourceTree = "<group>";
 		};
 		29C9FDD91EC6613F00EE3A52 /* Notifications */ = {
@@ -1760,6 +1790,7 @@
 				298BA09A1EC947FC00B01946 /* SegmentedControlModel.swift in Sources */,
 				299C06D81F0DD17B00C2828E /* IssueReviewEmptyTailCell.swift in Sources */,
 				298BA0981EC947F100B01946 /* SegmentedControlSectionController.swift in Sources */,
+				29C705011F147E0E009CF162 /* TUSafariActivity.m in Sources */,
 				292FCB081EDFCC510026635E /* IssueCommentSummaryCell.swift in Sources */,
 				292FCB211EDFCF870026635E /* IssueReactionCell.swift in Sources */,
 				2974069B1F0EDC7C003A6BFB /* IssueCommentTableModel.swift in Sources */,

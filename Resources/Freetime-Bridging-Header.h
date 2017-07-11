@@ -4,3 +4,4 @@
 
 #import "FlexController.h"
 #import "JDStatusBarNotification.h"
+#import "TUSafariActivity.h"

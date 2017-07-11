@@ -8,7 +8,6 @@
 
 import UIKit
 import IGListKit
-import TUSafariActivity
 import SafariServices
 
 final class IssuesViewController: UIViewController, ListAdapterDataSource, FeedDelegate {
