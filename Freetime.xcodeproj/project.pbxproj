@@ -482,6 +482,8 @@
 		29C704F31F147A68009CF162 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F21F147A68009CF162 /* SnapKit.framework */; };
 		29C704F51F147A6D009CF162 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F41F147A6D009CF162 /* SnapKit.framework */; };
 		29C704F61F147A6D009CF162 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F41F147A6D009CF162 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C704F81F147CF3009CF162 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F71F147CF3009CF162 /* Alamofire.framework */; };
+		29C704F91F147CF3009CF162 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F71F147CF3009CF162 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29C9FDCE1EC65FEE00EE3A52 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */; };
 		29C9FDCF1EC65FEE00EE3A52 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */; };
 		29C9FDD01EC65FEE00EE3A52 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */; };
@@ -520,6 +522,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				29C704F11F1479C5009CF162 /* SDWebImage.framework in Embed Frameworks */,
+				29C704F91F147CF3009CF162 /* Alamofire.framework in Embed Frameworks */,
 				29C704E01F147422009CF162 /* IGListKit.framework in Embed Frameworks */,
 				292484B91F01CB5C0054FE20 /* SwipeCellKit.framework in Embed Frameworks */,
 				295F52DB1EF1C0C7000B53CF /* MMMarkdown.framework in Embed Frameworks */,
@@ -730,6 +733,7 @@
 		29C704EF1F1479C5009CF162 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C704F21F147A68009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Vendor/SnapKit/build/Debug/SnapKit.framework; sourceTree = "<group>"; };
 		29C704F41F147A6D009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C704F71F147CF3009CF162 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
@@ -761,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C704F31F147A68009CF162 /* SnapKit.framework in Frameworks */,
+				29C704F81F147CF3009CF162 /* Alamofire.framework in Frameworks */,
 				29C704F01F1479C5009CF162 /* SDWebImage.framework in Frameworks */,
 				292484B81F01CB5C0054FE20 /* SwipeCellKit.framework in Frameworks */,
 				295F52DA1EF1C0C7000B53CF /* MMMarkdown.framework in Frameworks */,
@@ -1060,7 +1065,6 @@
 		297AE82B1EC0D58A00B44A1F = {
 			isa = PBXGroup;
 			children = (
-				29C704E11F147744009CF162 /* Vendor */,
 				297AE8571EC0D5C100B44A1F /* Classes */,
 				CF4CC0BFE456879DD6DBC714 /* Frameworks */,
 				297AE84B1EC0D58A00B44A1F /* FreetimeTests */,
@@ -1072,6 +1076,7 @@
 				297AE86D1EC0D5C200B44A1F /* Resources */,
 				296CD8231F014130001190B9 /* Sample */,
 				29F63FD11EC530E7007F55E4 /* TextViews.playground */,
+				29C704E11F147744009CF162 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1356,6 +1361,7 @@
 		CF4CC0BFE456879DD6DBC714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C704F71F147CF3009CF162 /* Alamofire.framework */,
 				29C704F41F147A6D009CF162 /* SnapKit.framework */,
 				29C704F21F147A68009CF162 /* SnapKit.framework */,
 				29C704EF1F1479C5009CF162 /* SDWebImage.framework */,

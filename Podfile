@@ -3,7 +3,6 @@ platform :ios, '10.0'
 
 use_frameworks!
 
-pod 'Alamofire', '~> 4.4.0'
 pod 'Apollo', '~> 0.5.6'
 pod 'TUSafariActivity', '~> 1.0.0'
 pod 'NYTPhotoViewer', '~> 1.1.0'
