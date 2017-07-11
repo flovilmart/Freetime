@@ -10,9 +10,6 @@ PODS:
     - FLAnimatedImage (~> 1.0.8)
     - NYTPhotoViewer/Core
   - NYTPhotoViewer/Core (1.1.0)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
   - SnapKit (3.2.0)
   - TUSafariActivity (1.0.4)
 
@@ -21,7 +18,6 @@ DEPENDENCIES:
   - Apollo (~> 0.5.6)
   - FLEX (~> 2.0)
   - NYTPhotoViewer (~> 1.1.0)
-  - SDWebImage (~> 4.0.0)
   - SnapKit (~> 3.2.0)
   - TUSafariActivity (~> 1.0.0)
 
@@ -31,10 +27,9 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: 40e122114006fa516a80c710432c76f6d09f0e0a
+PODFILE CHECKSUM: 059912e10356c916f66a9d98e7573521a6aa7f55
 
 COCOAPODS: 1.2.0
