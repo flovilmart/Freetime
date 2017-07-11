@@ -479,6 +479,9 @@
 		29C704EC1F14775C009CF162 /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C704E91F14775C009CF162 /* JDStatusBarView.m */; };
 		29C704F01F1479C5009CF162 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704EF1F1479C5009CF162 /* SDWebImage.framework */; };
 		29C704F11F1479C5009CF162 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704EF1F1479C5009CF162 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29C704F31F147A68009CF162 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F21F147A68009CF162 /* SnapKit.framework */; };
+		29C704F51F147A6D009CF162 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F41F147A6D009CF162 /* SnapKit.framework */; };
+		29C704F61F147A6D009CF162 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29C704F41F147A6D009CF162 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29C9FDCE1EC65FEE00EE3A52 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */; };
 		29C9FDCF1EC65FEE00EE3A52 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */; };
 		29C9FDD01EC65FEE00EE3A52 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */; };
@@ -520,6 +523,7 @@
 				29C704E01F147422009CF162 /* IGListKit.framework in Embed Frameworks */,
 				292484B91F01CB5C0054FE20 /* SwipeCellKit.framework in Embed Frameworks */,
 				295F52DB1EF1C0C7000B53CF /* MMMarkdown.framework in Embed Frameworks */,
+				29C704F61F147A6D009CF162 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +728,8 @@
 		29C704E81F14775C009CF162 /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
 		29C704E91F14775C009CF162 /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
 		29C704EF1F1479C5009CF162 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C704F21F147A68009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Vendor/SnapKit/build/Debug/SnapKit.framework; sourceTree = "<group>"; };
+		29C704F41F147A6D009CF162 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C9FDBA1EC65FEE00EE3A52 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		29C9FDBB1EC65FEE00EE3A52 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		29C9FDBC1EC65FEE00EE3A52 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
@@ -754,12 +760,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C704F31F147A68009CF162 /* SnapKit.framework in Frameworks */,
 				29C704F01F1479C5009CF162 /* SDWebImage.framework in Frameworks */,
 				292484B81F01CB5C0054FE20 /* SwipeCellKit.framework in Frameworks */,
 				295F52DA1EF1C0C7000B53CF /* MMMarkdown.framework in Frameworks */,
 				29C704DF1F147422009CF162 /* IGListKit.framework in Frameworks */,
 				4C733A0B57F91680B08D3CEC /* Pods_Freetime.framework in Frameworks */,
 				9393842FEF4F3CFF1844EA86 /* Pods_Freetime.framework in Frameworks */,
+				29C704F51F147A6D009CF162 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,6 +1356,8 @@
 		CF4CC0BFE456879DD6DBC714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C704F41F147A6D009CF162 /* SnapKit.framework */,
+				29C704F21F147A68009CF162 /* SnapKit.framework */,
 				29C704EF1F1479C5009CF162 /* SDWebImage.framework */,
 				29C704DE1F147422009CF162 /* IGListKit.framework */,
 				292484B71F01CB5C0054FE20 /* SwipeCellKit.framework */,

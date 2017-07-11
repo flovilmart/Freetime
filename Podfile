@@ -3,7 +3,6 @@ platform :ios, '10.0'
 
 use_frameworks!
 
-pod 'SnapKit', '~> 3.2.0'
 pod 'Alamofire', '~> 4.4.0'
 pod 'Apollo', '~> 0.5.6'
 pod 'TUSafariActivity', '~> 1.0.0'
