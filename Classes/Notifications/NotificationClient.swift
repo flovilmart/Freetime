@@ -51,6 +51,7 @@ final class NotificationClient {
         since: Date? = nil,
         page: Int = 1,
         before: Date? = nil,
+        repo: (owner: String, repo: String)? = nil,
         completion: @escaping (Result) -> ()
         ) {
         var parameters: [String: Any] = [
@@ -79,8 +80,15 @@ final class NotificationClient {
             completion(.success(notifications, page))
         }
 
+        let path: String
+        if let repo = repo {
+            path = "repos/\(repo.owner)/\(repo.repo)/notifications"
+        } else {
+            path = "notifications"
+        }
+
         githubClient.request(GithubClient.Request(
-            path: "notifications",
+            path: path,
             method: .get,
             parameters: parameters,
             headers: nil
