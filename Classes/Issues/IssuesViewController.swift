@@ -168,7 +168,7 @@ final class IssuesViewController: UIViewController, ListAdapterDataSource, FeedD
                 self.newCommentToken = IssueNewCommentToken(subjectId)
             }
             self.models = results
-            self.feed.finishLoading(dismissRefresh: true)
+            self.feed.finishLoading(dismissRefresh: true, scrollToLastItem: true)
         }
     }
 
