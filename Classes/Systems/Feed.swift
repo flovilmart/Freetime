@@ -78,7 +78,7 @@ final class Feed: NSObject, UIScrollViewDelegate {
                     self.collectionView.refreshControl?.endRefreshing()
                 }
                 if scrollToLastItem {
-                    self.collectionView.scrollToLastItem(animated: false)
+                    self.collectionView.scrollToBottom(animated: false)
                 }
             }
         }

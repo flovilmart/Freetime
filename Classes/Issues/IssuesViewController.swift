@@ -208,9 +208,7 @@ final class IssuesViewController: UIViewController, ListAdapterDataSource, FeedD
         collectionView.scrollIndicatorInsets = scrollInset
 
         // knowing that the comment field is at the bottom, just scroll all the way down
-        var offset = collectionView.contentOffset
-        offset.y = collectionView.contentSize.height + collectionView.contentInset.bottom - collectionView.bounds.height
-        collectionView.setContentOffset(offset, animated: true)
+        collectionView.scrollToBottom(animated: true)
     }
 
     func onKeyboardWillHide(notification: NSNotification) {
